@@ -3,6 +3,7 @@
 
 @import url(./components/root.css);
 @import url(./components/header.css);
+@import url(./components/promo.css);
 
 * {
   box-sizing: border-box;

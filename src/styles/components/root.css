@@ -9,6 +9,8 @@ body {
   margin: 0 auto;
   padding: 0;
 
+  overflow: clip;
+
   font-family: GolosText-Regular, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,5 +21,8 @@ body {
 .page {
   position: relative;
   width: 100%;
+}
+
+.content-width {
   max-width: 1366px;
 }

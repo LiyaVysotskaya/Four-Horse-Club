@@ -6,9 +6,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: transparent;
+  z-index: 10;
 }
 
 .header__logo {
-  margin-left: 72px;
+  margin-left: calc(72px + (349 - 72) * ((100vw - 1366px) / (1920 - 1366)));
 }
