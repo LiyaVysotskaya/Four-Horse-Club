@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  display: flex;
+  padding: 26px 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+
+.header__logo {
+  margin-left: 72px;
+}
