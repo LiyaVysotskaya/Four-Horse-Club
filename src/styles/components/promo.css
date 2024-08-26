@@ -10,6 +10,8 @@
   position: absolute;
   right: calc(33px + (309 - 33) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 84px;
+
+  z-index: 2;
 }
 
 .promo__text {
@@ -17,6 +19,7 @@
   right: calc(25px + (250 - 25) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 25px;
   opacity: 20%;
+  z-index: 3;
 
   animation: rotate 25s linear infinite;
 }
@@ -26,6 +29,8 @@
   right: calc(506px + (795 - 506) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 170px;
   transform: rotate(-5.99deg);
+
+  z-index: 4;
 }
 
 .promo__queen {
@@ -33,6 +38,14 @@
   right: calc(159px + (450 - 159) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 275px;
   transform: rotate(7.59deg);
+  z-index: 4;
+}
+
+.promo__city {
+  position: absolute;
+  right: calc(135 * ((100vw - 1366px) / (1920 - 1366)));
+  bottom: 0;
+  z-index: 5;
 }
 
 @keyframes rotate {
