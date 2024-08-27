@@ -6,7 +6,7 @@
   overflow: clip;
 }
 
-.promo__title {
+.promo__content {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -15,15 +15,19 @@
 
   max-width: 542px;
 
+  z-index: 8;
+}
+
+.promo__title {
+  display: flex;
+  flex-direction: column;
   font-family: Merriweather-Regular, sans-serif;
   font-size: 60px;
   line-height: 110%;
   text-transform: uppercase;
   text-align: left;
 
-  animation: titleAppear 2s linear forwards;
-
-  z-index: 8;
+  animation: textAppear 2s linear forwards;
 }
 
 .promo__title_span {
@@ -32,6 +36,64 @@
 
 .promo__title_span:last-of-type {
   text-align: right;
+}
+
+.promo__description {
+  margin-top: 24px;
+  font-family: GolosText-Regular, sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  opacity: 0;
+
+  animation: textAppear 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.promo__buttons-container {
+  display: flex;
+
+  margin-top: 40px;
+
+  gap: 16px;
+
+  animation: textAppear 2s linear forwards;
+}
+
+.promo__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 263px;
+  height: 72px;
+  padding: 20px 49px;
+  border: 2px solid #1f1f1f;
+  border-radius: 60px;
+
+  font-family: GolosText-Medium, sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.promo__button:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.promo__button_black {
+  color: #ffffff;
+  background-color: #1f1f1f;
+  border: none;
+}
+
+.promo__button_black:hover {
+  color: #1f1f1f;
+  background-color: #fbce51;
 }
 
 .promo__sun {
@@ -163,7 +225,7 @@
   }
 }
 
-@keyframes titleAppear {
+@keyframes textAppear {
   0% {
     opacity: 0;
   }
