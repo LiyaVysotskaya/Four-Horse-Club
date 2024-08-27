@@ -11,17 +11,8 @@
   right: calc(33px + (309 - 33) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 84px;
 
+  animation: rotate 30s linear infinite;
   z-index: 2;
-}
-
-.promo__text {
-  position: absolute;
-  right: calc(25px + (250 - 25) * ((100vw - 1366px) / (1920 - 1366)));
-  bottom: 25px;
-  opacity: 20%;
-  z-index: 3;
-
-  animation: rotate 25s linear infinite;
 }
 
 .promo__king {
