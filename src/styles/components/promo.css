@@ -54,7 +54,7 @@
 
 .promo__horse {
   position: absolute;
-  right: calc(334px + (610 - 334) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(334px + (630 - 334) * ((100vw - 1366px) / (1920 - 1366)));
   top: -200px;
   transform: rotate(-10.59deg);
 
@@ -109,19 +109,19 @@
     top: -200px;
   }
   100% {
-    top: 482px;
+    top: 495px;
   }
 }
 
 @keyframes horseBounce {
   0% {
-    top: 482px;
+    top: 495px;
   }
   50% {
-    top: 470px;
+    top: 485px;
   }
   100% {
-    top: 482px;
+    top: 495px;
   }
 }
 
