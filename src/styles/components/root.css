@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
   padding: 0;
 
-  overflow: clip;
+  overflow-x: clip;
 
   font-family: GolosText-Regular, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,6 +28,6 @@ body {
   width: 100%;
 }
 
-.content-width {
+.main {
   max-width: 1366px;
 }

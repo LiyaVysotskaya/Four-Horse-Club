@@ -1,10 +1,11 @@
 .running-line {
+  width: 1920px;
   display: flex;
 
   padding: 18px 0;
 
   background: #f54932;
-  overflow: hidden;
+  overflow: clip;
   flex-shrink: 0;
 }
 
