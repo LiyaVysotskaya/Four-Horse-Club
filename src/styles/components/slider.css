@@ -7,11 +7,37 @@
   height: 100%;
 }
 
+.slider__top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .slider__title {
   font-family: Merriweather-Regular, sans-serif;
   font-size: 54px;
   line-height: 120%;
   text-transform: uppercase;
+}
+
+.slider__controls {
+  display: flex;
+  align-items: center;
+}
+
+.slider__button {
+  width: 44px;
+  height: 44px;
+
+  background-color: #313131;
+  border: none;
+  border-radius: 50%;
+
+  padding: 12px 0;
+  margin-inline: 6px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .slider__list {
@@ -60,7 +86,7 @@
   line-height: 120%;
 }
 
-.slider__button {
+.slider__element_button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +108,7 @@
   transition: all 0.3s ease;
 }
 
-.slider__button:hover {
+.slider__element_button:hover {
   background-color: #3057a2;
   color: white;
 }
