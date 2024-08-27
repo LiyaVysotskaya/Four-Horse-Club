@@ -6,6 +6,96 @@
   overflow: clip;
 }
 
+.promo__content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 124px;
+  left: calc(72px + (348 - 72) * ((100vw - 1366px) / (1920 - 1366)));
+
+  max-width: 542px;
+
+  z-index: 8;
+}
+
+.promo__title {
+  display: flex;
+  flex-direction: column;
+  font-family: Merriweather-Regular, sans-serif;
+  font-size: 60px;
+  line-height: 110%;
+  text-transform: uppercase;
+  text-align: left;
+
+  animation: textAppear 2s linear forwards;
+}
+
+.promo__title_span {
+  text-align: center;
+}
+
+.promo__title_span:last-of-type {
+  text-align: right;
+}
+
+.promo__description {
+  margin-top: 24px;
+  font-family: GolosText-Regular, sans-serif;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  opacity: 0;
+
+  animation: textAppear 2s linear forwards;
+  animation-delay: 1s;
+}
+
+.promo__buttons-container {
+  display: flex;
+
+  margin-top: 40px;
+
+  gap: 16px;
+
+  animation: textAppear 2s linear forwards;
+}
+
+.promo__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 263px;
+  height: 72px;
+  padding: 20px 49px;
+  border: 2px solid #1f1f1f;
+  border-radius: 60px;
+
+  font-family: GolosText-Medium, sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.promo__button:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+.promo__button_black {
+  color: #ffffff;
+  background-color: #1f1f1f;
+  border: none;
+}
+
+.promo__button_black:hover {
+  color: #1f1f1f;
+  background-color: #fbce51;
+}
+
 .promo__sun {
   position: absolute;
   right: calc(25px + (250 - 25) * ((100vw - 1366px) / (1920 - 1366)));
@@ -42,6 +132,8 @@
   right: calc(130 * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 0;
   z-index: 5;
+
+  animation: cityAppear 2s ease-out forwards;
 }
 
 .promo__pattern {
@@ -56,10 +148,8 @@
   position: absolute;
   right: calc(334px + (630 - 334) * ((100vw - 1366px) / (1920 - 1366)));
   top: -200px;
-  transform: rotate(-10.59deg);
 
-  animation: horseDrop 1s ease-in forwards,
-    horseBounce 1s 1.1s ease-out infinite;
+  animation: horseDrop 1s ease-in forwards, horseBounce 1s 1s ease-out forwards;
   z-index: 7;
 }
 
@@ -117,11 +207,12 @@
   0% {
     top: 495px;
   }
-  50% {
-    top: 485px;
+  40% {
+    top: 440px;
   }
   100% {
     top: 495px;
+    transform: rotate(-10.59deg);
   }
 }
 
@@ -131,5 +222,14 @@
   }
   100% {
     right: calc(44px + (320 - 44) * ((100vw - 1366px) / (1920 - 1366)));
+  }
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
