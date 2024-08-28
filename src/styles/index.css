@@ -5,7 +5,7 @@
 @import url(./components/header.css);
 @import url(./components/promo.css);
 @import url(./components/running-line.css);
-@import url(./components/slider.css);
+@import url(./components/carousel.css);
 
 * {
   box-sizing: border-box;
