@@ -96,111 +96,138 @@
     </section>
 
     <main class="main">
-      <section class="slider" id="slider">
-        <div class="slider__top">
-          <h2 class="slider__title">Участники турнира</h2>
-          <div class="slider__controls">
+      <section class="carousel" id="carousel">
+        <div class="carousel__header">
+          <h2 class="carousel__title">Участники турнира</h2>
+          <div class="carousel__controls">
             <button
-              class="slider__button slider__button_prev"
+              class="carousel__button carousel__button--prev"
               type="button"
-            ></button>
-            <div class="slider__controls_info">
-              <span class="slider__controls_default">3</span>
-              <span class="slider-controls__separator">/</span>
-              <span class="slider__controls_count"></span>
+              disabled
+            >
+              <svg
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5382 18.4615L2.07666 9.99995L10.5382 1.53841"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </button>
+            <div class="carousel__controls-info">
+              <span class="carousel__current-slide">3</span>
+              <span class="carousel__separator">/</span>
+              <span class="carousel__total-slides">6</span>
             </div>
             <button
-              class="slider__button slider__button_next"
+              class="carousel__button carousel__button--next"
               type="button"
-            ></button>
+            >
+              <svg
+                viewBox="0 0 12 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.462 1.538 9.923 10l-8.461 8.462"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                />
+              </svg>
+            </button>
           </div>
         </div>
-        <ul class="slider__list">
-          <li class="slider__element">
+        <ul class="carousel__list">
+          <li class="carousel__item">
             <img
-              class="slider__photo"
+              class="carousel__image"
               src="./src/assets/images/avatar.png"
               alt="Хозе-Рауль Капабланка"
             />
-            <h3 class="slider__name">Хозе-Рауль Капабланка</h3>
-            <p class="slider__description">Чемпион мира по шахматам</p>
+            <h3 class="carousel__name">Хозе-Рауль Капабланка</h3>
+            <p class="carousel__description">Чемпион мира по шахматам</p>
             <a
-              class="slider__element_button"
+              class="carousel__link"
               href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BF%D0%B0%D0%B1%D0%BB%D0%B0%D0%BD%D0%BA%D0%B0,_%D0%A5%D0%BE%D1%81%D0%B5_%D0%A0%D0%B0%D1%83%D0%BB%D1%8C"
               target="_blank"
               >Подробнее</a
             >
           </li>
-          <li class="slider__element">
+          <li class="carousel__item">
             <img
-              class="slider__photo"
+              class="carousel__image"
               src="./src/assets/images/avatar.png"
               alt="Эммануил Ласкер"
             />
-            <h3 class="slider__name">Эммануил Ласкер</h3>
-            <p class="slider__description">Чемпион мира по шахматам</p>
+            <h3 class="carousel__name">Эммануил Ласкер</h3>
+            <p class="carousel__description">Чемпион мира по шахматам</p>
             <a
-              class="slider__element_button"
+              class="carousel__link"
               href="https://ru.wikipedia.org/wiki/%D0%9B%D0%B0%D1%81%D0%BA%D0%B5%D1%80,_%D0%AD%D0%BC%D0%B0%D0%BD%D1%83%D0%B8%D0%BB"
               target="_blank"
               >Подробнее</a
             >
           </li>
-          <li class="slider__element">
+          <li class="carousel__item">
             <img
-              class="slider__photo"
+              class="carousel__image"
               src="./src/assets/images/avatar.png"
               alt="Александр Алехин"
             />
-            <h3 class="slider__name">Александр Алехин</h3>
-            <p class="slider__description">Чемпион мира по шахматам</p>
+            <h3 class="carousel__name">Александр Алехин</h3>
+            <p class="carousel__description">Чемпион мира по шахматам</p>
             <a
-              class="slider__element_button"
+              class="carousel__link"
               href="https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B5%D1%85%D0%B8%D0%BD,_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87"
               target="_blank"
               >Подробнее</a
             >
           </li>
-          <li class="slider__element">
+          <li class="carousel__item">
             <img
-              class="slider__photo"
+              class="carousel__image"
               src="./src/assets/images/avatar.png"
               alt="Арон Нимцович"
             />
-            <h3 class="slider__name">Арон Нимцович</h3>
-            <p class="slider__description">Чемпион мира по шахматам</p>
+            <h3 class="carousel__name">Арон Нимцович</h3>
+            <p class="carousel__description">Чемпион мира по шахматам</p>
             <a
-              class="slider__element_button"
+              class="carousel__link"
               href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B8%D0%BC%D1%86%D0%BE%D0%B2%D0%B8%D1%87,_%D0%90%D1%80%D0%BE%D0%BD_%D0%98%D1%81%D0%B0%D0%B5%D0%B2%D0%B8%D1%87"
               target="_blank"
               >Подробнее</a
             >
           </li>
-          <li class="slider__element">
+          <li class="carousel__item">
             <img
-              class="slider__photo"
+              class="carousel__image"
               src="./src/assets/images/avatar.png"
               alt="Рихард Рети"
             />
-            <h3 class="slider__name">Рихард Рети</h3>
-            <p class="slider__description">Чемпион мира по шахматам</p>
+            <h3 class="carousel__name">Рихард Рети</h3>
+            <p class="carousel__description">Чемпион мира по шахматам</p>
             <a
-              class="slider__element_button"
+              class="carousel__link"
               href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%82%D0%B8,_%D0%A0%D0%B8%D1%85%D0%B0%D1%80%D0%B4"
               target="_blank"
               >Подробнее</a
             >
           </li>
-          <li class="slider__element">
+          <li class="carousel__item">
             <img
-              class="slider__photo"
+              class="carousel__image"
               src="./src/assets/images/avatar.png"
               alt="Остап Бендер"
             />
-            <h3 class="slider__name">Остап Бендер</h3>
-            <p class="slider__description">Гроссмейстер</p>
+            <h3 class="carousel__name">Остап Бендер</h3>
+            <p class="carousel__description">Гроссмейстер</p>
             <a
-              class="slider__element_button"
+              class="carousel__link"
               href="https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D1%82%D0%B0%D0%BF_%D0%91%D0%B5%D0%BD%D0%B4%D0%B5%D1%80"
               target="_blank"
               >Подробнее</a
@@ -209,7 +236,7 @@
         </ul>
       </section>
     </main>
-
+    <script src="./src/scripts/index.js"></script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
   </body>
 </html>

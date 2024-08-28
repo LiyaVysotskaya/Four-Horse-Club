@@ -21,6 +21,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
   text-rendering: optimizelegibility;
+
+  /* overflow: hidden; */
 }
 
 .page {
