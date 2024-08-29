@@ -6,7 +6,6 @@
   padding-bottom: 100px;
   width: 100%;
   max-width: 1222px;
-  /* height: 100%; */
   overflow: hidden;
 }
 
@@ -80,7 +79,6 @@
 
   margin-top: 60px;
 
-  justify-content: space-around;
   gap: 20px;
 
   list-style: none;
