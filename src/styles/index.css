@@ -58,3 +58,7 @@ p {
   padding: 0;
   font: inherit;
 }
+
+caption {
+  text-align: inherit;
+}

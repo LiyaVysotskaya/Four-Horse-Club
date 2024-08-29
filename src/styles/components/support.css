@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
 
+  text-align: left;
+
   margin: 80px auto 100px;
 }
 
@@ -47,4 +49,73 @@
   top: 0;
   left: 0;
   mix-blend-mode: color-burn;
+}
+
+.support__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 704px;
+  border-collapse: collapse;
+}
+
+.table__caption {
+  margin-top: 48px;
+  font-family: GolosText-Regular, sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  color: #3057a2;
+  caption-side: bottom;
+}
+
+.table__line {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.table__line:first-child .table__head,
+.table__line:first-child .table__cell {
+  padding-top: 0;
+}
+
+.table__line:last-child .table__head,
+.table__line:last-child .table__cell {
+  padding-bottom: 0;
+}
+
+.table__line:last-child {
+  border-bottom: none;
+}
+
+.table__head {
+  width: 306px;
+
+  padding: 16px 0;
+  font-family: GolosText-Regular, sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  color: #313131;
+  opacity: 0.7;
+  border-right: 1px solid #d0d0d0;
+}
+
+.table__head:last-child {
+  border-right: none;
+}
+
+.table__cell {
+  padding: 16px;
+  font-family: GolosText-SemiBold, sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+  color: #313131;
+  opacity: 1;
+}
+
+.table__crossed-out {
+  text-decoration: line-through;
+  text-decoration-color: #f54932;
 }
