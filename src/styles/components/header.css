@@ -15,3 +15,9 @@
 .header__logo {
   margin-left: 72px;
 }
+
+@media screen and (max-width: 1366px) {
+  .header__logo {
+    margin-left: calc(20px + (72 - 20) * ((100vw - 375px) / (1366 - 375)));
+  }
+}
