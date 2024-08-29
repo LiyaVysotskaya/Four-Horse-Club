@@ -1,19 +1,32 @@
 .promo {
   position: relative;
+
   width: 100%;
   height: 700px;
+
   background-color: #e9ded4;
   overflow: clip;
+}
+
+.promo__wrapper {
+  display: flex;
+
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .promo__content {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 124px;
-  left: calc(72px + (348 - 72) * ((100vw - 1366px) / (1920 - 1366)));
 
+  position: relative;
+
+  width: 100%;
   max-width: 542px;
+  margin-left: 72px;
+  top: 124px;
+  /* left: calc(72px + (348 - 72) * ((100vw - 1366px) / (1920 - 1366)));  */
 
   z-index: 8;
 }
@@ -101,7 +114,7 @@
 
 .promo__sun {
   position: absolute;
-  right: calc(25px + (250 - 25) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(-25px + (250 + 25) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 25px;
 
   animation: rotateText 30s linear infinite;
@@ -110,7 +123,7 @@
 
 .promo__king {
   position: absolute;
-  right: calc(506px + (795 - 506) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(517px + (783 - 517) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: -100px;
   transform: rotate(-5.99deg);
 
@@ -121,7 +134,7 @@
 
 .promo__queen {
   position: absolute;
-  right: calc(159px + (450 - 159) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(179px + (450 - 179) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: -100px;
   transform: rotate(7.59deg);
 
@@ -132,7 +145,7 @@
 
 .promo__city {
   position: absolute;
-  right: calc(130 * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(-141px + (135 + 141) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 0;
   z-index: 5;
 
@@ -142,14 +155,16 @@
 .promo__pattern {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   mix-blend-mode: color-burn;
   z-index: 6;
 }
 
 .promo__horse {
   position: absolute;
-  right: calc(334px + (630 - 334) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(354px + (630 - 354) * ((100vw - 1366px) / (1920 - 1366)));
   top: -200px;
 
   animation: horseDrop 1s ease-in forwards, horseBounce 1s 1s ease-out forwards;

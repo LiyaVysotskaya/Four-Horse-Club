@@ -1,14 +1,17 @@
 .header {
-  width: 100%;
   display: flex;
-  padding: 26px 0;
 
   position: absolute;
   top: 0;
   left: 0;
+
+  width: 100%;
+  max-width: 1366px;
+  padding: 26px 0;
+
   z-index: 10;
 }
 
 .header__logo {
-  margin-left: calc(72px + (349 - 72) * ((100vw - 1366px) / (1920 - 1366)));
+  margin-left: 72px;
 }

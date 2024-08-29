@@ -25,12 +25,14 @@ body {
   text-size-adjust: 100%;
   text-rendering: optimizelegibility;
 
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .page {
   position: relative;
+
   width: 100%;
+  max-width: 1366px;
 }
 
 .main {
