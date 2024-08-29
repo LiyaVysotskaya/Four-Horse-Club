@@ -8,6 +8,10 @@
 @import url(./components/carousel.css);
 @import url(./components/support.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 
