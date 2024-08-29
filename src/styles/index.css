@@ -6,6 +6,11 @@
 @import url(./components/promo.css);
 @import url(./components/running-line.css);
 @import url(./components/carousel.css);
+@import url(./components/support.css);
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
@@ -56,4 +61,8 @@ p {
   margin: 0;
   padding: 0;
   font: inherit;
+}
+
+caption {
+  text-align: inherit;
 }
