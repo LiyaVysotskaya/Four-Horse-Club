@@ -8,6 +8,7 @@
 @import url(./components/carousel.css);
 @import url(./components/support.css);
 @import url(./components/about.css);
+@import url(./components/footer.css);
 
 html {
   scroll-behavior: smooth;
