@@ -42,16 +42,46 @@
     "palace garages agriculture"
     "radio airport airport";
   gap: 20px;
+
+  margin-top: 54px;
 }
 
 .about__grid-item {
+  position: relative;
+
   padding: 20px 20px 20px 72px;
+
   font-family: GolosText-Medium, sans-serif;
   font-size: 20px;
   line-height: 120%;
   color: #313131;
+
   background-image: url("../../assets/images/element-bg.png");
+
   counter-increment: my-counter;
+}
+
+.about__grid-item::before {
+  content: counter(my-counter);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 36px;
+  height: 36px;
+
+  font-family: GolosText-SemiBold, sans-serif;
+  font-size: 20px;
+  line-height: 120%;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
 }
 
 .about__railroad {
@@ -81,4 +111,24 @@
 .about__airport {
   grid-area: airport;
   padding-right: 290px;
+}
+
+.about__airport-image {
+  position: absolute;
+  left: 470px;
+  bottom: 2px;
+
+  animation: airplaneBounce 1.5s infinite;
+}
+
+@keyframes airplaneBounce {
+  0% {
+    bottom: 2px;
+  }
+  40% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 2px;
+  }
 }
