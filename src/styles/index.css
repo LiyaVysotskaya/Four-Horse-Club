@@ -6,6 +6,7 @@
 @import url(./components/promo.css);
 @import url(./components/running-line.css);
 @import url(./components/carousel.css);
+@import url(./components/support.css);
 
 * {
   box-sizing: border-box;

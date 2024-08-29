@@ -1,0 +1,50 @@
+.support {
+  display: flex;
+  flex-direction: column;
+
+  margin: 80px auto 100px;
+}
+
+.support__top {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.support__content {
+  display: flex;
+  position: relative;
+  left: -27px;
+
+  margin-top: 64px;
+
+  gap: 17px;
+}
+
+.support__title,
+.support__subtitle {
+  font-family: Merriweather-Regular, sans-serif;
+  font-size: 36px;
+  line-height: 135%;
+  color: #313131;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "lnum" 1, "pnum" 1;
+  text-transform: uppercase;
+}
+
+.support__span {
+  color: #f54932;
+  font-family: Merriweather-Bold, sans-serif;
+}
+
+.support__img-container {
+  position: relative;
+  top: -30px;
+}
+
+.support__filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: color-burn;
+}
