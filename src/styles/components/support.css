@@ -189,7 +189,7 @@
 
 @keyframes hitHorse {
   0%,
-  20% {
+  22% {
     bottom: -30px;
     left: 90px;
     transform: translate(0, 0) rotate(0deg);
