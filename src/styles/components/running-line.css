@@ -46,7 +46,7 @@
   border-radius: 50%;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 790px) {
   .running-line {
     padding: 10px 0;
   }
