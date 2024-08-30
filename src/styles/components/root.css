@@ -25,7 +25,7 @@ body {
   text-size-adjust: 100%;
   text-rendering: optimizelegibility;
 
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .page {
