@@ -30,7 +30,9 @@ body {
 
 .page {
   position: relative;
+
   width: 100%;
+  max-width: 1366px;
 }
 
 .main {
@@ -39,5 +41,6 @@ body {
 
   margin: 0 auto;
 
+  width: 100%;
   max-width: 1222px;
 }

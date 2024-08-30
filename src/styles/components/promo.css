@@ -1,19 +1,33 @@
 .promo {
   position: relative;
+  display: flex;
+
   width: 100%;
   height: 700px;
+
   background-color: #e9ded4;
   overflow: clip;
+}
+
+.promo__wrapper {
+  display: flex;
+
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .promo__content {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 124px;
-  left: calc(72px + (348 - 72) * ((100vw - 1366px) / (1920 - 1366)));
 
+  position: relative;
+
+  width: 100%;
   max-width: 542px;
+  height: fit-content;
+  margin-left: 72px;
+  top: 124px;
 
   z-index: 8;
 }
@@ -21,6 +35,7 @@
 .promo__title {
   display: flex;
   flex-direction: column;
+
   font-family: Merriweather-Regular, sans-serif;
   font-size: 60px;
   line-height: 110%;
@@ -41,11 +56,13 @@
 
 .promo__description {
   margin-top: 24px;
+
   font-family: GolosText-Regular, sans-serif;
   font-size: 18px;
   line-height: 130%;
   color: #313131;
   text-align: center;
+
   opacity: 0;
 
   animation: textAppear 2s linear forwards;
@@ -101,7 +118,7 @@
 
 .promo__sun {
   position: absolute;
-  right: calc(25px + (250 - 25) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(-25px + (250 + 25) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 25px;
 
   animation: rotateText 30s linear infinite;
@@ -110,7 +127,7 @@
 
 .promo__king {
   position: absolute;
-  right: calc(506px + (795 - 506) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(517px + (783 - 517) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: -100px;
   transform: rotate(-5.99deg);
 
@@ -121,7 +138,7 @@
 
 .promo__queen {
   position: absolute;
-  right: calc(159px + (450 - 159) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(179px + (450 - 179) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: -100px;
   transform: rotate(7.59deg);
 
@@ -132,7 +149,7 @@
 
 .promo__city {
   position: absolute;
-  right: calc(130 * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(-141px + (135 + 141) * ((100vw - 1366px) / (1920 - 1366)));
   bottom: 0;
   z-index: 5;
 
@@ -142,14 +159,16 @@
 .promo__pattern {
   width: 100%;
   height: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   mix-blend-mode: color-burn;
   z-index: 6;
 }
 
 .promo__horse {
   position: absolute;
-  right: calc(334px + (630 - 334) * ((100vw - 1366px) / (1920 - 1366)));
+  right: calc(354px + (630 - 354) * ((100vw - 1366px) / (1920 - 1366)));
   top: -200px;
 
   animation: horseDrop 1s ease-in forwards, horseBounce 1s 1s ease-out forwards;
@@ -164,6 +183,99 @@
   animation: pawnSlideIn 2s ease-out forwards;
   animation-delay: 2s;
   z-index: 7;
+}
+
+@media screen and (max-width: 1366px) {
+  .promo__title {
+    font-size: min(60px, 5.5vw);
+  }
+
+  .promo__button_white {
+    background-color: #ffffff;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .promo {
+    height: 774px;
+    justify-content: center;
+  }
+
+  .promo__wrapper {
+    justify-content: center;
+  }
+
+  .promo__content {
+    margin: 0 auto;
+    max-width: calc(335px + (542 - 335) * ((100vw - 375px) / (790 - 375)));
+    top: 90px;
+  }
+
+  .promo__title {
+    font-size: max(36px, 7vw);
+  }
+
+  .promo__description {
+    text-align: left;
+  }
+
+  .promo__buttons-container {
+    margin-top: 32px;
+    flex-direction: column;
+  }
+
+  .promo__button {
+    width: 100%;
+    height: 47px;
+    padding: 18px 43px;
+  }
+
+  .promo__sun {
+    content: url("../../assets/images/mobile/sun_with_text_mobile.svg");
+
+    right: 20px;
+    bottom: 40px;
+  }
+
+  .promo__king {
+    content: url("../../assets/images/mobile/king_mobile.png");
+
+    right: 257px;
+
+    animation: kingAppearMobile 2s ease-out forwards;
+  }
+
+  .promo__queen {
+    content: url("../../assets/images/mobile/queen_mobile.png");
+
+    right: 95px;
+    transform: rotate(15deg);
+
+    animation: queenAppearMobile 2s ease-out forwards;
+  }
+
+  .promo__city {
+    content: url("../../assets/images/mobile/city_mobile.png");
+
+    right: 0;
+    bottom: -10px;
+  }
+
+  .promo__horse {
+    content: url("../../assets/images/mobile/horse_mobile.png");
+
+    right: 140px;
+
+    animation: horseDropMobile 1s ease-in forwards,
+      horseBounceMobile 1s 1s ease-out forwards;
+  }
+
+  .promo__pawn {
+    content: "";
+
+    animation: none;
+  }
 }
 
 @keyframes rotateText {
@@ -186,6 +298,17 @@
   }
 }
 
+@keyframes kingAppearMobile {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 111px;
+    opacity: 1;
+  }
+}
+
 @keyframes queenAppear {
   0% {
     bottom: -100px;
@@ -193,6 +316,17 @@
   }
   100% {
     bottom: 270px;
+    opacity: 1;
+  }
+}
+
+@keyframes queenAppearMobile {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 162px;
     opacity: 1;
   }
 }
@@ -206,6 +340,15 @@
   }
 }
 
+@keyframes horseDropMobile {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 700px;
+  }
+}
+
 @keyframes horseBounce {
   0% {
     top: 495px;
@@ -215,6 +358,19 @@
   }
   100% {
     top: 495px;
+    transform: rotate(-10.59deg);
+  }
+}
+
+@keyframes horseBounceMobile {
+  0% {
+    top: 665px;
+  }
+  40% {
+    top: 650px;
+  }
+  100% {
+    top: 665px;
     transform: rotate(-10.59deg);
   }
 }
