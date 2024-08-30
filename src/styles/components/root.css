@@ -25,7 +25,7 @@ body {
   text-size-adjust: 100%;
   text-rendering: optimizelegibility;
 
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .page {
@@ -43,10 +43,4 @@ body {
 
   width: 100%;
   max-width: 1222px;
-}
-
-@media screen and (max-width: 1000px) {
-  .main {
-    /* max-width: max(336px, calc(100% - 20px * 2)); */
-  }
 }

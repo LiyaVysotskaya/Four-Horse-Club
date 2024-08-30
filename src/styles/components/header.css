@@ -16,8 +16,13 @@
   margin-left: 72px;
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 790px) {
+  .header {
+    padding: 18px 0;
+  }
+
   .header__logo {
+    width: 213px;
     margin-left: calc(20px + (72 - 20) * ((100vw - 375px) / (1366 - 375)));
   }
 }

@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  display: flex;
 
   width: 100%;
   height: 700px;
@@ -24,6 +25,7 @@
 
   width: 100%;
   max-width: 542px;
+  height: fit-content;
   margin-left: 72px;
   top: 124px;
 
@@ -187,19 +189,39 @@
   .promo__title {
     font-size: min(60px, 5.5vw);
   }
+
+  .promo__button_white {
+    background-color: #ffffff;
+    border: none;
+  }
 }
 
 @media screen and (max-width: 790px) {
+  .promo {
+    height: 774px;
+    justify-content: center;
+  }
+
+  .promo__wrapper {
+    justify-content: center;
+  }
+
   .promo__content {
+    margin: 0 auto;
     max-width: calc(335px + (542 - 335) * ((100vw - 375px) / (790 - 375)));
-    margin-left: calc(20px + (72 - 20) * ((100vw - 375px) / (1366 - 375)));
+    top: 90px;
   }
 
   .promo__title {
     font-size: max(36px, 7vw);
   }
 
+  .promo__description {
+    text-align: left;
+  }
+
   .promo__buttons-container {
+    margin-top: 32px;
     flex-direction: column;
   }
 
@@ -209,28 +231,50 @@
     padding: 18px 43px;
   }
 
+  .promo__sun {
+    content: url("../../assets/images/mobile/sun_with_text_mobile.svg");
+
+    right: 20px;
+    bottom: 40px;
+  }
+
   .promo__king {
     content: url("../../assets/images/mobile/king_mobile.png");
+
+    right: 257px;
+
+    animation: kingAppearMobile 2s ease-out forwards;
   }
 
   .promo__queen {
     content: url("../../assets/images/mobile/queen_mobile.png");
+
+    right: 95px;
+    transform: rotate(15deg);
+
+    animation: queenAppearMobile 2s ease-out forwards;
   }
 
   .promo__city {
     content: url("../../assets/images/mobile/city_mobile.png");
+
+    right: 0;
+    bottom: -10px;
   }
 
   .promo__horse {
     content: url("../../assets/images/mobile/horse_mobile.png");
+
+    right: 140px;
+
+    animation: horseDropMobile 1s ease-in forwards,
+      horseBounceMobile 1s 1s ease-out forwards;
   }
 
   .promo__pawn {
     content: "";
-  }
 
-  .promo__sun {
-    content: url("../../assets/images/mobile/sun_with_text_mobile.svg");
+    animation: none;
   }
 }
 
@@ -254,6 +298,17 @@
   }
 }
 
+@keyframes kingAppearMobile {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 111px;
+    opacity: 1;
+  }
+}
+
 @keyframes queenAppear {
   0% {
     bottom: -100px;
@@ -261,6 +316,17 @@
   }
   100% {
     bottom: 270px;
+    opacity: 1;
+  }
+}
+
+@keyframes queenAppearMobile {
+  0% {
+    bottom: -100px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 162px;
     opacity: 1;
   }
 }
@@ -274,6 +340,15 @@
   }
 }
 
+@keyframes horseDropMobile {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 700px;
+  }
+}
+
 @keyframes horseBounce {
   0% {
     top: 495px;
@@ -283,6 +358,19 @@
   }
   100% {
     top: 495px;
+    transform: rotate(-10.59deg);
+  }
+}
+
+@keyframes horseBounceMobile {
+  0% {
+    top: 665px;
+  }
+  40% {
+    top: 650px;
+  }
+  100% {
+    top: 665px;
     transform: rotate(-10.59deg);
   }
 }
