@@ -46,6 +46,16 @@
   border-radius: 50%;
 }
 
+@media screen and (max-width: 1366px) {
+  .running-line {
+    padding: 10px 0;
+  }
+
+  .running-line__text {
+    font-size: 16px;
+  }
+}
+
 @keyframes running-line {
   0% {
     transform: translateX(0);
